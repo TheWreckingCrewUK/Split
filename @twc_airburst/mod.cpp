@@ -1,0 +1,12 @@
+name = "TWC Airburst";
+picture = "twc_logo_512.paa";
+logo = "twc_logo_64.paa";
+logoOver = "twc_logo_64.paa";
+tooltip = "TWC Airburst";
+tooltipOwned = "TWC Owned";
+overview = "TWC Airburst.";
+overviewPicture = "twc_logo_512.paa";
+author = "TWC Team";
+actionName = "Website";
+action = "http://www.thewreckingcrew.eu";
+description = "TWC Airburst Configs";
