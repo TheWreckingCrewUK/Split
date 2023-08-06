@@ -26,7 +26,7 @@ if (_nextEventType == "item") then {
 } else {
 	if (_nextEventType == "magazine") then {
 		if (({_x == _nextEventClassname} count magazineCargo _target) < _nextEventCount) exitWith { false };
-		_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addMagazineCargo;
+		_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Box_Transfer_fnc_addMagazineCargo;
 		_succeeded = (_return select 0);
 		
 		if (_succeeded) then {
@@ -37,7 +37,7 @@ if (_nextEventType == "item") then {
 	} else {
 		if (_nextEventType == "weapon") then {
 			if (({_x == _nextEventClassname} count weaponCargo _target) < _nextEventCount) exitWith { false };
-			_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addWeaponCargo;
+			_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Box_Transfer_fnc_addWeaponCargo;
 			_succeeded = (_return select 0);
 			
 			if (_succeeded) then {
@@ -48,7 +48,7 @@ if (_nextEventType == "item") then {
 		} else {
 			if (_nextEventType == "backpack") then {
 				if (({_x == _nextEventClassname} count backpackCargo _target) < _nextEventCount) exitWith { false };
-				_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addBackpackCargo;
+				_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Box_Transfer_fnc_addBackpackCargo;
 				_succeeded = (_return select 0);
 				
 				if (_succeeded) then {

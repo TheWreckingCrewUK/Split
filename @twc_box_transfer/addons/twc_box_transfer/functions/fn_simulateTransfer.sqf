@@ -9,7 +9,7 @@ private _totaltime = 0;
 
 // [time, count, classname, itemtype]
 private _events = [];
-private _assets = [_vehicle] call TWC_Core_fnc_getCargo;
+private _assets = [_vehicle] call TWC_Box_Transfer_fnc_getCargo;
 
 {
 	_x params ["_type", "_classname", "_count"];
@@ -17,9 +17,9 @@ private _assets = [_vehicle] call TWC_Core_fnc_getCargo;
 	_timeMod = 1;
 	switch (_type) do {
 		case "backpack";
-		case "weapon": { _timeMod = 1.5; };
-		case "item": { _timeMod = 0.25; };
-		default { _timeMod = 1; };
+		case "weapon": { _timeMod = 1; };
+		case "item": { _timeMod = 0.1; };
+		default { _timeMod = 0.5; };
 	};
 	
 	_time = (_timeMod);

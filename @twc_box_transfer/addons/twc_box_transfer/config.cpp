@@ -5,8 +5,7 @@ class CfgPatches {
 		requiredVersion = 1.7;
 
 		requiredAddons[] = {
-			"ace_common",
-			"twc_core"
+			"ace_common"
 		};
 
 		author[] = {};
@@ -22,6 +21,10 @@ class CfgFunctions {
 		class functions {
 			file = "twc_box_transfer\functions";
 			
+			class addBackpackCargo {};
+			class addMagazineCargo {};
+			class addWeaponCargo {};
+			class getCargo {};
 			class getTransferChildren {};
 			class simulateTransfer {};
 			class transferFinish {};
