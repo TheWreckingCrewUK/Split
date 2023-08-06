@@ -2,11 +2,10 @@ class CfgAmmo {
 	
 	class F_40mm_White;
 	class Grenade;
-	class CUP_R_MEEWS_HEAT;
-	class TWC_Ammo_L14A1_HEAT: CUP_R_MEEWS_HEAT {
-		
-	};
-	class TWC_Ammo_L14A1_HE: CUP_R_MEEWS_HEAT {
+	class R_MRAAWS_HEAT_F;
+	
+
+	class TWC_Ammo_L14A1_HE: R_MRAAWS_HEAT_F {
 		aiAmmoUsageFlags = "64 + 128";
 		allowAgainstInfantry = 1;
 		hit = 100;
@@ -43,6 +42,7 @@ class CfgAmmo {
 		soundEngine[] = {"",1,4};
 		explosionEffects = "GrenadeExplosion";
 	};
+/*
 	class TWC_Ammo_L14A1_Smoke: CUP_R_MEEWS_HEAT {
 		aiAmmoUsageFlags = "4";
 		allowAgainstInfantry = 1;
@@ -59,7 +59,8 @@ class CfgAmmo {
 		deleteParentWhenTriggered = 1;
 		warheadName = "Smoke";
 	};
-	class TWC_Ammo_L14A1_Illum: CUP_R_MEEWS_HEAT {
+*/
+	class TWC_Ammo_L14A1_Illum: R_MRAAWS_HEAT_F {
 		aiAmmoUsageFlags = "1";
 		hit = 5;
 		indirectHit = 14;

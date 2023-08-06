@@ -6,7 +6,6 @@ class CfgPatches {
 		
 		requiredAddons[]= {
 			"A3_Weapons_F",
-			"cup_weapons_maaws",
 			"cba_xeh"
 		};
 
@@ -37,14 +36,19 @@ class CfgWeapons {
 		class WeaponsSlotsInfo;
 	};
 	
-	class CUP_launch_MAAWS: Launcher_Base_F
+/*
+
+//**fun stuff. this doesn't work because its a dlc weapons which i get but is lame**
+
+
+	class launch_MRAWS_green_rail_F: Launcher_Base_F
 	{
 		class WeaponSlotsInfo;
 	};
-	
-	class TWC_Weapon_L14A1: CUP_launch_MAAWS
+
+	class TWC_Weapon_MRAWS: launch_MRAWS_green_rail_F
 	{
-		displayname = "L14A1";
+		displayname = "MRAWS (Airburst Config)";
 		magazines[] = {
 			"TWC_Magazine_L14A1_HEAT","TWC_Magazine_L14A1_HE","TWC_Magazine_L14A1_Smoke","TWC_Magazine_L14A1_Illum",
 			"TWC_Magazine_L14A1_HE_200", "TWC_Magazine_L14A1_Illum_200",
@@ -75,6 +79,21 @@ class CfgWeapons {
 			mass = 255;
 		};
 	};
+*/
+	
+	
+	
+	#if __has_include("\CUP\Weapons\cup_weapons_maaws\config.bin")
+		#include "cup_maaws.hpp"
+	#endif
+	
+	#if __has_include("\rhsusf\addons\rhsusf_weapons2\config.bin")
+		#include "rhs_maaws.hpp"
+	#endif
+	
+	
+	
+	
 };
 
 #include "CfgEventHandlers.hpp"

@@ -1,39 +1,21 @@
 class CfgMagazines {
 	class CA_Magazine;
 	
-	class CUP_MAAWS_HEDP_M;
-	class TWC_Magazine_L14A1_HEAT: CUP_MAAWS_HEDP_M
-	{
-		ammo = "TWC_Ammo_L14A1_HEAT";
-		descriptionShort = "Range: 1000 m<br/>Type: HEAT (High Explosive Anti Tank)<br/>Used in: L14A1";
-		displayName = "L41A1 (HEAT) Round";
-		displayNameShort = "HEAT";
-		initSpeed = 255;
-		mass = 70;
-	};
-	class TWC_Magazine_L14A1_HE: CUP_MAAWS_HEDP_M
+	class MRAWS_HEAT_F;
+	class TWC_Magazine_L14A1_HE: MRAWS_HEAT_F
 	{
 		ammo = "TWC_Ammo_L14A1_HE";
 		descriptionShort = "Range: 1000 m<br/>Type: HE (High Explosive)<br/>Used in: L14A1";
-		displayName = "L42A1 (HE) Round";
+		displayName = "L42A1 (HE Airburst) Round";
 		displayNameShort = "HE";
 		initSpeed = 255;
 		mass = 66;
 	};
-	class TWC_Magazine_L14A1_Smoke: CUP_MAAWS_HEDP_M
-	{
-		ammo = "TWC_Ammo_L14A1_Smoke";
-		descriptionShort = "Range: 1000 m<br/>Type: Smoke<br/>Used in: L14A1";
-		displayName = "L43A1 (Smoke) Round";
-		displayNameShort = "Smoke";
-		initSpeed = 255;
-		mass = 68;
-	};
-	class TWC_Magazine_L14A1_Illum: CUP_MAAWS_HEDP_M
+	class TWC_Magazine_L14A1_Illum: MRAWS_HEAT_F
 	{
 		ammo = "TWC_Ammo_L14A1_Illum";
 		descriptionShort = "Range: 2300 m<br/>Type: Illumination<br/>Used in: L14A1";
-		displayName = "L44A1 (Illum) Round";
+		displayName = "L44A1 (Illum Airburst) Round";
 		displayNameShort = "Illum";
 		initSpeed = 255;
 		mass = 70;
