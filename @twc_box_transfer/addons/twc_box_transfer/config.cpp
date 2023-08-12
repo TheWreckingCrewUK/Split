@@ -22,6 +22,7 @@ class CfgFunctions {
 			file = "twc_box_transfer\functions";
 			
 			class addBackpackCargo {};
+			class addItemCargo {};
 			class addMagazineCargo {};
 			class addWeaponCargo {};
 			class getCargo {};

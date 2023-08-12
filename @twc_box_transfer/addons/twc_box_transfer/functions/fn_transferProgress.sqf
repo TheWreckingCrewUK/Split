@@ -15,7 +15,7 @@ _succeeded = false; // check if failed added item to new container (space usuall
 if (_nextEventType == "item") then {
 	// double check the item still exists, another player/script might have yoinked it
 	if (({_x == _nextEventClassname} count itemCargo _target) < _nextEventCount) exitWith { false };
-	_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Core_fnc_addItemCargo;
+	_return = [(_destination select 2), _nextEventClassname, _nextEventCount, true] call TWC_Box_Transfer_fnc_addItemCargo;
 	_succeeded = (_return select 0);
 	
 	if (_succeeded) then {
