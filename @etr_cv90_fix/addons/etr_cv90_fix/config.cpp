@@ -1,6 +1,11 @@
 class CfgPatches {
 	class etr_cv90_fix {
-		units[]= { };
+		units[]= {
+			"etr_cv90_fixed",
+			"etr_cv90_desert_fixed",
+			"etr_cv90_snow_fixed",
+			"etr_cv90_un_fixed"			
+		};
 		weapons[]= { };
 		requiredVersion=0.1;
 		
