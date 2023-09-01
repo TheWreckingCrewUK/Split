@@ -22,28 +22,28 @@ class cfgVehicles
 	class sfp_strf90c;
 	class etr_cv90_fixed: sfp_strf90c
 	{
-		displayName = "ETR CV90";
+		displayName = "CV90 7Man";
 		transportSoldier = 3;
 	};
 	//Desert
 	class sfp_strf90c_desert;
 	class etr_cv90_desert_fixed: sfp_strf90c_desert
 	{
-		displayName = "ETR CV90 Desert";
+		displayName = "CV90 7Man Desert";
 		transportSoldier = 3;
 	};
 	//Snow
 	class sfp_strf90c_snow;
 	class etr_cv90_snow_fixed: sfp_strf90c_snow
 	{
-		displayName = "ETR CV90 Snow";
+		displayName = "CV90 7Man Snow";
 		transportSoldier = 3;
 	};
 	//UN
 	class sfp_strf90c_un;
 	class etr_cv90_un_fixed: sfp_strf90c_un
 	{
-		displayName = "ETR CV90 UN";
+		displayName = "CV90 7Man UN";
 		transportSoldier = 3;
 	};
 };
