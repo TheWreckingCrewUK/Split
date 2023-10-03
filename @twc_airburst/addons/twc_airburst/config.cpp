@@ -91,6 +91,10 @@ class CfgWeapons {
 		#include "rhs_maaws.hpp"
 	#endif
 	
+	#if __has_include("\spearpoint alpha\addons\sp_carlgustav\config.bin")
+		#include "spearpoint_alpha_maaws.hpp"
+	#endif
+	
 	
 	
 	
